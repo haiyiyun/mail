@@ -3,7 +3,7 @@ package data
 import (
 	"net/http"
 
-	"github.com/eaigner/dkim"
+	"github.com/haiyiyun/dkim"
 	"github.com/haiyiyun/log"
 )
 
