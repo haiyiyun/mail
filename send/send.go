@@ -7,14 +7,14 @@ import (
 	"strings"
 
 	"github.com/haiyiyun/mail/data"
-	"github.com/haiyiyun/validator"
+	"github.com/haiyiyun/mail/predefined"
 )
 
 func SendMail(addr, mailIp string, m data.Mailer, skipVerify bool, a smtp.Auth, from string) error {
 	h := m.Header()
 	md := m.Data()
-	tos := validator.EmailRegexp.FindAllString(h.Get("To"), -1)
-	mailFrom := strings.Trim(h.Get("Return-Path"), "< & >")
+	tos := predefined.EmailRegexp.FindAllString(h.Get("To"), -1)
+	mailFrom := strings.Trim(h.Get("Return-Path"), "<>")
 	mailDomain := strings.Split(mailFrom, "@")[1]
 	if from != "" {
 		mailFrom = from

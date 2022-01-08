@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/haiyiyun/log"
-	"github.com/haiyiyun/validator"
+	"github.com/haiyiyun/mail/predefined"
 )
 
 type Default struct {
@@ -20,14 +20,14 @@ func NewDefault(receivedId, senderDomain, from, to, subject string, body *Body, 
 	//防止hs里面会相关header的值，所以使用set来操作，使有的话，覆盖掉
 	hs.Set("Date", time.Now().Format(time.RFC1123Z))
 	hs.Set("Message-Id", "<"+receivedId+"@"+senderDomain+">")
-	fromAddr := validator.EmailRegexp.FindString(from)
+	fromAddr := predefined.EmailRegexp.FindString(from)
 	if pos := strings.Index(from, " <"); pos != -1 {
 		hs.Set("From", QP(from[:pos]).EncodeQP()+from[pos:])
 	} else {
 		hs.Set("From", fromAddr)
 	}
 
-	toAddr := validator.EmailRegexp.FindString(to)
+	toAddr := predefined.EmailRegexp.FindString(to)
 	if pos := strings.Index(to, " <"); pos != -1 {
 		hs.Set("To", QP(to[:pos]).EncodeQP()+to[pos:])
 	} else {
