@@ -10,7 +10,7 @@ import (
 	"github.com/haiyiyun/log"
 )
 
-var ipsCache *cache.Cache = cache.New(12*time.Hour, 3*time.Hour)
+var ipsCache cache.Cache = cache.New(12*time.Hour, 3*time.Hour)
 
 func IPs(mxDomain string) (map[string][]string, error) {
 	ips := map[string][]string{}
