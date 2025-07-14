@@ -1,11 +1,11 @@
 module github.com/haiyiyun/mail
 
-go 1.21
+go 1.24.5
 
 require (
-	github.com/haiyiyun/cache v0.0.0-20250713185115-e62475849fda
+	github.com/haiyiyun/cache v0.0.0-20250714021121-939a1d547974
 	github.com/haiyiyun/dkim v0.0.0-20250713195945-ca6ef05a88fe
-	github.com/haiyiyun/log v0.0.0-20250713182740-69ca3d5834ba
+	github.com/haiyiyun/log v0.0.0-20250714021242-243291bf2f88
 )
 
 require (
