@@ -8,8 +8,8 @@ github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f h1:lO4WD4F/r
 github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f/go.mod h1:cuUVRXasLTGF7a8hSLbxyZXjz+1KgoB3wDUb6vlszIc=
 github.com/haiyiyun/cache v0.0.0-20250714021121-939a1d547974 h1:dSg6fq44uN8UnQhCOlnBOJQR6pATuvyB7Z3i4c8rf6I=
 github.com/haiyiyun/cache v0.0.0-20250714021121-939a1d547974/go.mod h1:O1JFInQKPqwfB8JoNL1h1pQZsXNi9TeghK36SX1qVoM=
-github.com/haiyiyun/dkim v0.0.0-20250713195945-ca6ef05a88fe h1:1Y+pJPsEMYdoaTEHui9amfFvh5XIJCo45kogOGcJy6Y=
-github.com/haiyiyun/dkim v0.0.0-20250713195945-ca6ef05a88fe/go.mod h1:lTtM3kXFsIyod+GhPg9kOA10U07cMLz/G4qywXHaDsw=
+github.com/haiyiyun/dkim v0.0.0-20250714023701-a21138f6b741 h1:/WWdl9e61/TUB2u+Qp3h57FPy2C5nObBnNxQ6TZHkjI=
+github.com/haiyiyun/dkim v0.0.0-20250714023701-a21138f6b741/go.mod h1:tMB25ewtVgnH5Xjq4LInEoGfA6YPUtpA2tLYKE9qHp4=
 github.com/haiyiyun/log v0.0.0-20250714021242-243291bf2f88 h1:K0c5SzBlwtvDLoRykKHetDJEDMPtBM4Je9Ox+k13YiA=
 github.com/haiyiyun/log v0.0.0-20250714021242-243291bf2f88/go.mod h1:REISaucR2styQ62sk//GZEiv8pQNcOEkCjR0J/fG4bg=
 github.com/redis/go-redis/v9 v9.11.0 h1:E3S08Gl/nJNn5vkxd2i78wZxWAPNZgUNTp8WIJUAiIs=
