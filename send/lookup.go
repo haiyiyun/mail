@@ -47,9 +47,7 @@ func IPs(mxDomain string) (map[string][]string, error) {
 
 func RandomIP(mxDomain string) (string, error) {
 	var ips map[string][]string
-	if x, found := ipsCache.Get(mxDomain); found {
-		ips = x.(map[string][]string)
-	} else {
+	if found, _ := ipsCache.Get(mxDomain, &ips); !found {
 		ipst, err := IPs(mxDomain)
 		if err != nil || ipst == nil {
 			return "", err
